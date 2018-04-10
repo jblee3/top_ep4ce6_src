@@ -1,7 +1,7 @@
 module my_decode (
-                input wire [7:0] i,
+                input wire [1:0] i,
                 input wire e,
-                output reg y );
+                output reg [3:0] y );
 
     always @(i, e) begin
             if (e) begin
