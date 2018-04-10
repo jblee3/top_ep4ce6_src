@@ -1,0 +1,11 @@
+4 beep.v
+4 led_twinkle.v
+4 my_and.v
+4 my_decode.v
+4 my_sel.v
+4 my_uart_rx.v
+4 my_uart_top.v
+4 my_uart_tx.v
+4 sled.v
+4 speed_select.v
+4 top_ep4ce6.v

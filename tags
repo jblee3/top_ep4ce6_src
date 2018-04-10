@@ -1,0 +1,100 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BPS_PARA	speed_select.v	/^        `define     BPS_PARA          5207    $/;"	c
+BPS_PARA_2	speed_select.v	/^        `define     BPS_PARA_2        2603    $/;"	c
+b	my_and.v	/^				input b,$/;"	p
+beep	beep.v	/^module    beep($/;"	m
+beep_r	beep.v	/^    reg beep_r;$/;"	r
+beep_r	top_ep4ce6.v	/^        wire beep_r;$/;"	n
+bps_start	my_uart_rx.v	/^output bps_start;		$/;"	p
+bps_start	my_uart_tx.v	/^output bps_start;	$/;"	p
+bps_start1	my_uart_top.v	/^wire bps_start1,bps_start2;    $/;"	n
+bps_start2	my_uart_top.v	/^wire bps_start1,bps_start2;    $/;"	n
+bps_start_r	my_uart_rx.v	/^reg bps_start_r;$/;"	r
+bps_start_r	my_uart_tx.v	/^reg bps_start_r;$/;"	r
+clk	led_twinkle.v	/^        input clk,$/;"	p
+clk	my_uart_rx.v	/^input clk;		$/;"	p
+clk	my_uart_top.v	/^input clk;            $/;"	p
+clk	my_uart_tx.v	/^input clk;			\/\/ 50MHz$/;"	p
+clk_bps	my_uart_rx.v	/^input clk_bps;	$/;"	p
+clk_bps	my_uart_tx.v	/^input clk_bps;		\/\/ clk_bps_r$/;"	p
+clk_bps1	my_uart_top.v	/^wire clk_bps1,clk_bps2;        $/;"	n
+clk_bps2	my_uart_top.v	/^wire clk_bps1,clk_bps2;        $/;"	n
+clk_bps_r	speed_select.v	/^        reg clk_bps_r;            $/;"	r
+cnt	speed_select.v	/^        reg[12:0] cnt;            $/;"	r
+count	beep.v	/^    reg[27:0]count;$/;"	r
+count	sled.v	/^    reg [36:0] count; \/\/定义计数寄存器$/;"	r
+counter	led_twinkle.v	/^    reg[24:0] counter;  $/;"	r
+disp_dat	sled.v	/^    reg [3:0] disp_dat; \/\/显示数据寄存器$/;"	r
+led_twinkle	led_twinkle.v	/^module led_twinkle($/;"	m
+my_and	my_and.v	/^module my_and (input a,$/;"	m
+my_decode	my_decode.v	/^module my_decode ($/;"	m
+my_sel	my_sel.v	/^module my_sel ($/;"	m
+my_uart_rx	my_uart_rx.v	/^module my_uart_rx($/;"	m
+my_uart_top	my_uart_top.v	/^module my_uart_top($/;"	m
+my_uart_tx	my_uart_tx.v	/^module my_uart_tx($/;"	m
+neg_rs232_rx	my_uart_rx.v	/^wire neg_rs232_rx;	$/;"	n
+neg_rx_int	my_uart_tx.v	/^wire neg_rx_int;	$/;"	n
+num	my_uart_rx.v	/^reg[3:0] num;	$/;"	r
+num	my_uart_tx.v	/^reg[3:0] num;$/;"	r
+output	led_twinkle.v	/^        output reg [3:0] led );$/;"	p
+output	my_and.v	/^				output c);$/;"	p
+reg	my_decode.v	/^                output reg [3:0] y );$/;"	p
+reg	sled.v	/^    output reg [3:0] dig );$/;"	p
+reg	sled.v	/^    output reg [7:0] seg,$/;"	p
+rs232_rx	my_uart_rx.v	/^input rs232_rx;	$/;"	p
+rs232_rx	my_uart_top.v	/^input rs232_rx;        $/;"	p
+rs232_rx0	my_uart_rx.v	/^reg rs232_rx0,rs232_rx1,rs232_rx2,rs232_rx3;	$/;"	r
+rs232_rx1	my_uart_rx.v	/^reg rs232_rx0,rs232_rx1,rs232_rx2,rs232_rx3;	$/;"	r
+rs232_rx2	my_uart_rx.v	/^reg rs232_rx0,rs232_rx1,rs232_rx2,rs232_rx3;	$/;"	r
+rs232_rx3	my_uart_rx.v	/^reg rs232_rx0,rs232_rx1,rs232_rx2,rs232_rx3;	$/;"	r
+rs232_tx	my_uart_top.v	/^output rs232_tx;    $/;"	p
+rs232_tx	my_uart_tx.v	/^output rs232_tx;	$/;"	p
+rs232_tx_r	my_uart_tx.v	/^reg rs232_tx_r;$/;"	r
+rst_n	my_uart_rx.v	/^input rst_n;	$/;"	p
+rst_n	my_uart_top.v	/^input rst_n;        $/;"	p
+rst_n	my_uart_tx.v	/^input rst_n;		$/;"	p
+rx_data	my_uart_rx.v	/^output[7:0] rx_data;	$/;"	p
+rx_data	my_uart_top.v	/^wire[7:0] rx_data;    $/;"	n
+rx_data	my_uart_tx.v	/^input[7:0] rx_data;	$/;"	p
+rx_data_r	my_uart_rx.v	/^reg[7:0] rx_data_r;		$/;"	r
+rx_int	my_uart_rx.v	/^output rx_int;	$/;"	p
+rx_int	my_uart_rx.v	/^reg rx_int;		$/;"	r
+rx_int	my_uart_top.v	/^wire rx_int;        $/;"	n
+rx_int	my_uart_tx.v	/^input rx_int;		$/;"	p
+rx_int0	my_uart_tx.v	/^reg rx_int0,rx_int1,rx_int2;	$/;"	r
+rx_int1	my_uart_tx.v	/^reg rx_int0,rx_int1,rx_int2;	$/;"	r
+rx_int2	my_uart_tx.v	/^reg rx_int0,rx_int1,rx_int2;	$/;"	r
+rx_temp_data	my_uart_rx.v	/^reg[7:0] rx_temp_data;	$/;"	r
+sled	sled.v	/^module sled($/;"	m
+speed_select	speed_select.v	/^module speed_select($/;"	m
+top_ep4ce6	top_ep4ce6.v	/^module top_ep4ce6 ($/;"	m
+tx_data	my_uart_tx.v	/^reg[7:0] tx_data;	$/;"	r
+tx_en	my_uart_tx.v	/^reg tx_en;	$/;"	r
+uart_ctrl	speed_select.v	/^        reg[2:0] uart_ctrl;    $/;"	r
+wire	beep.v	/^    input    wire clk,$/;"	p
+wire	beep.v	/^    output   wire beep );$/;"	p
+wire	my_decode.v	/^                input wire [1:0] i,$/;"	p
+wire	my_decode.v	/^                input wire e,$/;"	p
+wire	my_sel.v	/^                input wire a,$/;"	p
+wire	my_sel.v	/^                input wire b,$/;"	p
+wire	my_sel.v	/^                input wire sel,$/;"	p
+wire	my_sel.v	/^                output wire c );$/;"	p
+wire	sled.v	/^    input wire clock,$/;"	p
+wire	speed_select.v	/^                input wire bps_start,$/;"	p
+wire	speed_select.v	/^                input wire clk,     \/\/ 50 MHz$/;"	p
+wire	speed_select.v	/^                input wire rst_n,$/;"	p
+wire	speed_select.v	/^                output wire clk_bps$/;"	p
+wire	top_ep4ce6.v	/^                input wire [3:0] sw,$/;"	p
+wire	top_ep4ce6.v	/^                input wire clk50m,$/;"	p
+wire	top_ep4ce6.v	/^                input wire resetn,$/;"	p
+wire	top_ep4ce6.v	/^                input wire uart_rx,$/;"	p
+wire	top_ep4ce6.v	/^                output wire [3:0] seg_cs );$/;"	p
+wire	top_ep4ce6.v	/^                output wire [4:0] led,$/;"	p
+wire	top_ep4ce6.v	/^                output wire [7:0] seg7,$/;"	p
+wire	top_ep4ce6.v	/^                output wire beep,$/;"	p
+wire	top_ep4ce6.v	/^                output wire uart_tx,$/;"	p

@@ -1,0 +1,1869 @@
+cscope 15 $HOME/Study/Verilog/top_ep4ce6_src               0000007902
+	@beep.v
+
+2 
+moduÀ
+ 
+bìp
+(
+
+3 
+öput
+ 
+wúe
+ 
+˛k
+,
+
+4 
+ouçut
+ 
+wúe
+ 
+bìp
+ );
+
+6 
+ªg
+ 
+	gbìp_r
+;
+
+7 
+	gªg
+[27:0]
+cou¡
+;
+
+9 
+assign
+ 
+	gbìp
+ = 
+bìp_r
+;
+
+11 
+	gÆways
+@(
+po£dge
+ 
+	g˛k
+)
+
+12 
+begö
+
+
+13 
+	gcou¡
+ <
+cou¡
+ + 1'b1;
+
+14 
+íd
+
+
+16 
+Æways
+ @(
+cou¡
+[9])
+
+17 
+begö
+
+
+18 
+bìp_r
+ = !(
+cou¡
+[13] & count[24] & count[27]);
+
+19 
+íd
+
+
+21 
+	gídmoduÀ
+
+
+	@led_twinkle.v
+
+1 
+moduÀ
+ 
+Àd_twökÀ
+(
+
+2 
+öput
+ 
+˛k
+,
+
+3 
+ouçut
+ 
+ªg
+ [3:0] 
+Àd
+ );
+
+5 
+	gªg
+[24:0] 
+cou¡î
+;
+
+7 
+	gÆways
+@(
+po£dge
+ 
+	g˛k
+)
+
+8 
+begö
+
+
+9 
+	gcou¡î
+<=
+cou¡î
++1;
+
+11 if(
+	gcou¡î
+==25'd25000000)
+
+12 
+begö
+
+
+13 
+Àd
+<=~led;
+
+14 
+	gcou¡î
+<=0;
+
+15 
+íd
+
+
+16 
+íd
+
+
+17 
+	gídmoduÀ
+
+
+	@my_and.v
+
+1 
+moduÀ
+ 
+my_™d
+ (
+öput
+ 
+a
+,
+
+2 
+öput
+ 
+b
+,
+
+3 
+ouçut
+ 
+c
+);
+
+4 
+assign
+ 
+	gc
+ = 
+a
+&
+b
+;
+
+6 
+	gídmoduÀ
+
+
+	@my_decode.v
+
+1 
+moduÀ
+ 
+my_decode
+ (
+
+2 
+öput
+ 
+wúe
+ [1:0] 
+i
+,
+
+3 
+öput
+ 
+wúe
+ 
+e
+,
+
+4 
+ouçut
+ 
+ªg
+ [3:0] 
+y
+ );
+
+6 
+	gÆways
+ @(
+	gi
+, 
+	ge
+Ë
+begö
+
+
+7 i‡(
+	ge
+Ë
+begö
+
+
+8 
+	gy
+=4'b1111;
+
+9 
+íd
+
+
+10 
+begö
+
+
+11 (
+i
+)
+
+12 2'b00: y=4'
+b1110
+;
+
+13 2'b01: y=4'
+	gb1101
+;
+
+14 2'b10: y=4'
+	gb1011
+;
+
+15 2'b11: y=4'
+	gb0111
+;
+
+16 : 
+y
+=4'b1111;
+
+17 
+ídˇ£
+
+
+18 
+íd
+
+
+19 
+íd
+
+
+21 
+ídmoduÀ
+
+
+	@my_sel.v
+
+1 
+moduÀ
+ 
+my_£l
+ (
+
+2 
+öput
+ 
+wúe
+ 
+a
+,
+
+3 
+öput
+ 
+wúe
+ 
+b
+,
+
+4 
+öput
+ 
+wúe
+ 
+£l
+,
+
+5 
+ouçut
+ 
+wúe
+ 
+c
+ );
+
+7 
+assign
+ 
+	gc
+ = 
+£l
+?
+a
+:
+b
+;
+
+9 
+	gídmoduÀ
+
+
+	@my_uart_rx.v
+
+1 `
+	gtimesˇÀ
+ 1
+	gns
+ / 1
+ps
+
+
+3 
+moduÀ
+ 
+my_u¨t_rx
+(
+
+4 
+˛k
+,
+
+5 
+r°_n
+,
+
+6 
+rs232_rx
+,
+
+7 
+rx_d©a
+,
+
+8 
+rx_öt
+,
+
+9 
+˛k_bps
+,
+
+10 
+bps_°¨t
+
+
+13 
+öput
+ 
+	g˛k
+;
+
+14 
+öput
+ 
+	gr°_n
+;
+
+15 
+öput
+ 
+	grs232_rx
+;
+
+16 
+öput
+ 
+	g˛k_bps
+;
+
+17 
+ouçut
+ 
+	gbps_°¨t
+;
+
+18 
+	gouçut
+[7:0] 
+rx_d©a
+;
+
+19 
+ouçut
+ 
+	grx_öt
+;
+
+22 
+ªg
+ 
+	grs232_rx0
+,
+	grs232_rx1
+,
+	grs232_rx2
+,
+	grs232_rx3
+;
+
+23 
+wúe
+ 
+	g√g_rs232_rx
+;
+
+25 
+	gÆways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+	gr°_n
+Ë
+begö
+
+
+26 if(!
+	gr°_n
+Ë
+begö
+
+
+27 
+	grs232_rx0
+ <= 1'b0;
+
+28 
+rs232_rx1
+ <= 1'b0;
+
+29 
+rs232_rx2
+ <= 1'b0;
+
+30 
+rs232_rx3
+ <= 1'b0;
+
+31 
+íd
+
+
+32 
+begö
+
+
+33 
+rs232_rx0
+ <
+rs232_rx
+;
+
+34 
+	grs232_rx1
+ <
+rs232_rx0
+;
+
+35 
+	grs232_rx2
+ <
+rs232_rx1
+;
+
+36 
+	grs232_rx3
+ <
+rs232_rx2
+;
+
+37 
+íd
+
+
+38 
+íd
+
+
+42 
+assign
+ 
+	g√g_rs232_rx
+ = 
+rs232_rx3
+ & 
+rs232_rx2
+ & ~
+rs232_rx1
+ & ~
+rs232_rx0
+;
+
+45 
+ªg
+ 
+	gbps_°¨t_r
+;
+
+46 
+	gªg
+[3:0] 
+num
+;
+
+47 
+ªg
+ 
+	grx_öt
+;
+
+49 
+	gÆways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+	gr°_n
+)
+
+50 if(!
+	gr°_n
+Ë
+begö
+
+
+51 
+	gbps_°¨t_r
+ <= 1'bz;
+
+52 
+rx_öt
+ <= 1'b0;
+
+53 
+íd
+
+
+54 if(
+√g_rs232_rx
+Ë
+begö
+
+
+55 
+bps_°¨t_r
+ <= 1'b1;
+
+56 
+rx_öt
+ <= 1'b1;
+
+57 
+íd
+
+
+58 if(
+num
+==4'd11) begin
+
+59 
+bps_°¨t_r
+ <= 1'b0;
+
+60 
+rx_öt
+ <= 1'b0;
+
+61 
+íd
+
+
+63 
+assign
+ 
+bps_°¨t
+ = 
+bps_°¨t_r
+;
+
+66 
+	gªg
+[7:0] 
+rx_d©a_r
+;
+
+69 
+	gªg
+[7:0] 
+rx_ãmp_d©a
+;
+
+71 
+	gÆways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+	gr°_n
+)
+
+72 if(!
+	gr°_n
+Ë
+begö
+
+
+73 
+	grx_ãmp_d©a
+ <= 8'd0;
+
+74 
+num
+ <= 4'd0;
+
+75 
+rx_d©a_r
+ <= 8'd0;
+
+76 
+íd
+
+
+77 if(
+rx_öt
+Ë
+begö
+
+
+78 if(
+˛k_bps
+Ë
+begö
+
+
+79 
+num
+ <=Çum+1'b1;
+
+80 (
+num
+)
+
+90 
+ídˇ£
+
+
+91 
+íd
+
+
+92 if(
+	gnum
+ == 4'd11) begin //1+8+1(2)=11bit
+
+93 
+num
+ <= 4'd0; //STOP,Çum
+
+94 
+rx_d©a_r
+ <
+rx_ãmp_d©a
+;
+
+95 
+íd
+
+
+96 
+íd
+
+
+98 
+assign
+ 
+	grx_d©a
+ = 
+rx_d©a_r
+;
+
+100 
+	gídmoduÀ
+
+
+	@my_uart_top.v
+
+2 `
+	gtimesˇÀ
+ 1
+	gns
+ / 1
+ps
+
+
+4 
+moduÀ
+ 
+my_u¨t_t›
+(
+
+5 
+˛k
+,
+r°_n
+,
+
+6 
+rs232_rx
+,
+rs232_tx
+
+
+9 
+öput
+ 
+	g˛k
+;
+
+10 
+öput
+ 
+	gr°_n
+;
+
+12 
+öput
+ 
+	grs232_rx
+;
+
+13 
+ouçut
+ 
+	grs232_tx
+;
+
+15 
+wúe
+ 
+	gbps_°¨t1
+,
+	gbps_°¨t2
+;
+
+16 
+wúe
+ 
+	g˛k_bps1
+,
+	g˛k_bps2
+;
+
+17 
+	gwúe
+[7:0] 
+rx_d©a
+;
+
+18 
+wúe
+ 
+	grx_öt
+;
+
+23 
+•ìd_£À˘
+ 
+•ìd_rx
+(
+
+24 .
+˛k
+(clk),
+
+25 .
+r°_n
+(rst_n),
+
+26 .
+bps_°¨t
+(
+bps_°¨t1
+),
+
+27 .
+˛k_bps
+(
+˛k_bps1
+)
+
+30 
+my_u¨t_rx
+ my_uart_rx(
+
+31 .
+˛k
+(clk),
+
+32 .
+r°_n
+(rst_n),
+
+33 .
+rs232_rx
+(rs232_rx),
+
+34 .
+rx_d©a
+(rx_data),
+
+35 .
+rx_öt
+(rx_int),
+
+36 .
+˛k_bps
+(
+˛k_bps1
+),
+
+37 .
+bps_°¨t
+(
+bps_°¨t1
+)
+
+41 
+•ìd_£À˘
+ 
+•ìd_tx
+(
+
+42 .
+˛k
+(clk),
+
+43 .
+r°_n
+(rst_n),
+
+44 .
+bps_°¨t
+(
+bps_°¨t2
+),
+
+45 .
+˛k_bps
+(
+˛k_bps2
+)
+
+48 
+my_u¨t_tx
+ my_uart_tx(
+
+49 .
+˛k
+(clk),
+
+50 .
+r°_n
+(rst_n),
+
+51 .
+rx_d©a
+(rx_data),
+
+52 .
+rx_öt
+(rx_int),
+
+53 .
+rs232_tx
+(rs232_tx),
+
+54 .
+˛k_bps
+(
+˛k_bps2
+),
+
+55 .
+bps_°¨t
+(
+bps_°¨t2
+)
+
+58 
+	gídmoduÀ
+
+
+	@my_uart_tx.v
+
+1 `
+	gtimesˇÀ
+ 1
+	gns
+ / 1
+ps
+
+
+3 
+moduÀ
+ 
+my_u¨t_tx
+(
+
+4 
+˛k
+,
+r°_n
+,
+
+5 
+rx_d©a
+,
+rx_öt
+,
+rs232_tx
+,
+
+6 
+˛k_bps
+,
+bps_°¨t
+
+
+9 
+öput
+ 
+	g˛k
+;
+
+10 
+öput
+ 
+	gr°_n
+;
+
+11 
+öput
+ 
+	g˛k_bps
+;
+
+12 
+	göput
+[7:0] 
+rx_d©a
+;
+
+13 
+öput
+ 
+	grx_öt
+;
+
+14 
+ouçut
+ 
+	grs232_tx
+;
+
+15 
+ouçut
+ 
+	gbps_°¨t
+;
+
+18 
+ªg
+ 
+	grx_öt0
+,
+	grx_öt1
+,
+	grx_öt2
+;
+
+19 
+wúe
+ 
+	g√g_rx_öt
+;
+
+21 
+assign
+ 
+	grs232_tx
+ = 
+rs232_tx_r
+;
+
+23 
+	gÆways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+	gr°_n
+Ë
+begö
+
+
+24 if(!
+	gr°_n
+Ë
+begö
+
+
+25 
+	grx_öt0
+ <= 1'b0;
+
+26 
+rx_öt1
+ <= 1'b0;
+
+27 
+rx_öt2
+ <= 1'b0;
+
+28 
+íd
+
+
+29 
+begö
+
+
+30 
+rx_öt0
+ <
+rx_öt
+;
+
+31 
+	grx_öt1
+ <
+rx_öt0
+;
+
+32 
+	grx_öt2
+ <
+rx_öt1
+;
+
+33 
+íd
+
+
+34 
+íd
+
+
+36 
+assign
+ 
+	g√g_rx_öt
+ = ~
+rx_öt1
+ & 
+rx_öt2
+;
+
+39 
+	gªg
+[7:0] 
+tx_d©a
+;
+
+41 
+ªg
+ 
+	gbps_°¨t_r
+;
+
+42 
+ªg
+ 
+	gtx_í
+;
+
+43 
+	gªg
+[3:0] 
+num
+;
+
+45 
+	gÆways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+	gr°_n
+Ë
+begö
+
+
+46 if(!
+	gr°_n
+Ë
+begö
+
+
+47 
+	gbps_°¨t_r
+ <= 1'bz;
+
+48 
+tx_í
+ <= 1'b0;
+
+49 
+tx_d©a
+ <= 8'd0;
+
+50 
+íd
+
+
+51 if(
+√g_rx_öt
+Ë
+begö
+
+
+52 
+bps_°¨t_r
+ <= 1'b1;
+
+53 
+tx_d©a
+ <
+rx_d©a
+;
+
+54 
+	gtx_í
+ <= 1'b1;
+
+55 
+íd
+
+
+56 if(
+num
+==4'd11) begin
+
+57 
+bps_°¨t_r
+ <= 1'b0;
+
+58 
+tx_í
+ <= 1'b0;
+
+59 
+íd
+
+
+60 
+íd
+
+
+62 
+assign
+ 
+bps_°¨t
+ = 
+bps_°¨t_r
+;
+
+65 
+ªg
+ 
+	grs232_tx_r
+;
+
+67 
+	gÆways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+	gr°_n
+Ë
+begö
+
+
+68 if(!
+	gr°_n
+Ë
+begö
+
+
+69 
+	gnum
+ <= 4'd0;
+
+70 
+rs232_tx_r
+ <= 1'b1;
+
+71 
+íd
+
+
+72 if(
+tx_í
+Ë
+begö
+
+
+73 if(
+˛k_bps
+Ë
+begö
+
+
+74 
+num
+ <=Çum+1'b1;
+
+75 (
+num
+)
+
+76 4'd0:Ñs232_tx_∏<1'
+b0
+;
+
+85 4'd9:Ñs232_tx_∏<1'
+	gb1
+;
+
+86 : 
+rs232_tx_r
+ <= 1'b1;
+
+87 
+ídˇ£
+
+
+88 
+íd
+
+
+89 if(
+num
+==4'd11Ënum <4'
+d0
+;
+
+90 
+íd
+
+
+91 
+íd
+
+
+93 
+	gídmoduÀ
+
+
+	@sled.v
+
+2 
+moduÀ
+ 
+¶ed
+(
+
+3 
+öput
+ 
+wúe
+ 
+˛ock
+,
+
+4 
+ouçut
+ 
+ªg
+ [7:0] 
+£g
+,
+
+5 
+ouçut
+ 
+ªg
+ [3:0] 
+dig
+ );
+
+7 
+	gªg
+ [3:0] 
+di•_d©
+;
+
+8 
+	gªg
+ [36:0] 
+cou¡
+;
+
+10 
+	gÆways
+ @ (
+po£dge
+ 
+	g˛ock
+ )
+
+11 
+begö
+
+
+12 
+	gcou¡
+ = 
+cou¡
+ + 1'b1;
+
+13 
+dig
+ = 4'b0000;
+
+14 
+íd
+
+
+16 
+Æways
+ @ (
+cou¡
+[24])
+
+17 
+begö
+
+
+18 
+di•_d©
+ = {
+cou¡
+[28:25]};
+
+19 
+íd
+
+
+21 
+	gÆways
+ @ (
+	gdi•_d©
+)
+
+22 
+begö
+
+
+23 (
+	gdi•_d©
+)
+
+24 4'h0 : seg = 8'
+	ghc0
+;
+
+25 4'h1 : seg = 8'
+	ghf9
+;
+
+26 4'h2 : seg = 8'
+	gha4
+;
+
+27 4'h3 : seg = 8'
+	ghb0
+;
+
+28 4'h4 : seg = 8'
+	gh99
+;
+
+29 4'h5 : seg = 8'
+	gh92
+;
+
+30 4'h6 : seg = 8'
+	gh82
+;
+
+31 4'h7 : seg = 8'
+	ghf8
+;
+
+32 4'h8 : seg = 8'
+	gh80
+;
+
+33 4'h9 : seg = 8'
+	gh90
+;
+
+34 4'h®: seg = 8'
+	gh88
+;
+
+35 4'hb : seg = 8'
+	gh83
+;
+
+36 4'h¯: seg = 8'
+	ghc6
+;
+
+37 4'hd : seg = 8'
+	gha1
+;
+
+38 4'hê: seg = 8'
+	gh86
+;
+
+39 4'h‡: seg = 8'
+	gh8e
+;
+
+40 
+ídˇ£
+
+
+41 
+íd
+
+
+43 
+	gídmoduÀ
+
+
+	@speed_select.v
+
+1 `
+	gtimesˇÀ
+ 1
+	gns
+ / 1
+ps
+
+
+3 
+moduÀ
+ 
+•ìd_£À˘
+(
+
+4 
+öput
+ 
+wúe
+ 
+˛k
+,
+
+5 
+öput
+ 
+wúe
+ 
+r°_n
+,
+
+6 
+öput
+ 
+wúe
+ 
+bps_°¨t
+,
+
+7 
+ouçut
+ 
+wúe
+ 
+˛k_bps
+
+
+24 `
+deföe
+ 
+	gBPS_PARA
+ 5207
+
+25 `
+deföe
+ 
+	gBPS_PARA_2
+ 2603
+
+27 
+	gªg
+[12:0] 
+˙t
+;
+
+28 
+ªg
+ 
+	g˛k_bps_r
+;
+
+31 
+	gªg
+[2:0] 
+u¨t_˘æ
+;
+
+34 
+assign
+ 
+	g˛k_bps
+ = 
+˛k_bps_r
+;
+
+36 
+	gÆways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+	gr°_n
+)
+
+37 
+begö
+
+
+38 if(!
+	gr°_n
+)
+
+39 
+	g˙t
+ <= 13'd0;
+
+40 if((
+˙t
+ =`
+BPS_PARA
+Ë|| !
+bps_°¨t
+)
+
+41 
+˙t
+ <= 13'd0;
+
+43 
+˙t
+ <= cnt+1'b1;
+
+44 
+íd
+
+
+46 
+Æways
+ @ (
+po£dge
+ 
+˛k
+ 
+‹
+ 
+√gedge
+ 
+r°_n
+)
+
+47 
+begö
+
+
+48 if(!
+r°_n
+)
+
+49 
+˛k_bps_r
+ <= 1'b0; // bps_start
+
+50 if(
+˙t
+ =`
+BPS_PARA_2
+ && 
+bps_°¨t
+)
+
+51 
+˛k_bps_r
+ <= 1'b1; // clk_bps_r
+
+53 
+˛k_bps_r
+ <= 1'b0;
+
+54 
+íd
+
+
+56 
+ídmoduÀ
+
+
+	@top_ep4ce6.v
+
+1 
+moduÀ
+ 
+t›_ï4˚6
+ (
+
+2 
+öput
+ 
+wúe
+ 
+ª£ä
+,
+
+3 
+öput
+ 
+wúe
+ 
+˛k50m
+,
+
+4 
+öput
+ 
+wúe
+ 
+u¨t_rx
+,
+
+5 
+öput
+ 
+wúe
+ [3:0] 
+sw
+,
+
+6 
+ouçut
+ 
+wúe
+ 
+u¨t_tx
+,
+
+7 
+ouçut
+ 
+wúe
+ 
+bìp
+,
+
+8 
+ouçut
+ 
+wúe
+ [4:0] 
+Àd
+,
+
+9 
+ouçut
+ 
+wúe
+ [7:0] 
+£g7
+,
+
+10 
+ouçut
+ 
+wúe
+ [3:0] 
+£g_cs
+ );
+
+12 
+wúe
+ 
+	gbìp_r
+;
+
+14 
+assign
+ 
+	gbìp
+ = 
+sw
+[0]?
+bìp_r
+:1'b0;
+
+19 
+Àd_twökÀ
+ 
+Àd_twökÀ0
+–
+˛k50m
+, 
+Àd
+ );
+
+20 
+¶ed
+ 
+¶ed0
+–
+˛k50m
+, 
+£g7
+, 
+£g_cs
+ );
+
+21 
+bìp
+ 
+bìp0
+–
+˛k50m
+, 
+bìp_r
+ );
+
+23 
+	gídmoduÀ
+
+
+	@
+1
+.
+1
+/usr/include
+11
+126
+beep.v
+led_twinkle.v
+my_and.v
+my_decode.v
+my_sel.v
+my_uart_rx.v
+my_uart_top.v
+my_uart_tx.v
+sled.v
+speed_select.v
+top_ep4ce6.v
