@@ -1,9 +1,13 @@
 `timescale 1ns / 1ps
 
 module my_uart_tx(
-				clk,rst_n,
-				rx_data,rx_int,rs232_tx,
-				clk_bps,bps_start
+				clk,
+                rst_n,
+				rx_data,
+                rx_int,
+                rs232_tx,
+				clk_bps,
+                bps_start
 			);
 
 input clk;			// 50MHz
