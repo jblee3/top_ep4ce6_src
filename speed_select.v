@@ -46,9 +46,9 @@ module speed_select(
         always @ (posedge clk or negedge rst_n)
         begin
             if(!rst_n) 
-                clk_bps_r <= 1'b0; // bps_start
+                clk_bps_r <= 1'b0;             // bps_start
             else if(cnt == `BPS_PARA_2 && bps_start) 
-                clk_bps_r <= 1'b1;    // clk_bps_r
+                clk_bps_r <= 1'b1;             // clk_bps_r
             else 
                 clk_bps_r <= 1'b0;
         end

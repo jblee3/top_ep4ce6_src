@@ -72,6 +72,8 @@ rx_int2	my_uart_tx.v	/^reg rx_int0,rx_int1,rx_int2;	$/;"	r
 rx_temp_data	my_uart_rx.v	/^reg[7:0] rx_temp_data;	$/;"	r
 sled	sled.v	/^module sled($/;"	m
 speed_select	speed_select.v	/^module speed_select($/;"	m
+sysclk	top_ep4ce6.v	/^        `define sysclk 50$/;"	c
+test_mode	top_ep4ce6.v	/^        `define test_mode$/;"	c
 top_ep4ce6	top_ep4ce6.v	/^module top_ep4ce6 ($/;"	m
 tx_data	my_uart_tx.v	/^reg[7:0] tx_data;	$/;"	r
 tx_en	my_uart_tx.v	/^reg tx_en;	$/;"	r
@@ -96,5 +98,5 @@ wire	top_ep4ce6.v	/^                input wire uart_rx,$/;"	p
 wire	top_ep4ce6.v	/^                output wire [3:0] seg_cs );$/;"	p
 wire	top_ep4ce6.v	/^                output wire [4:0] led,$/;"	p
 wire	top_ep4ce6.v	/^                output wire [7:0] seg7,$/;"	p
-wire	top_ep4ce6.v	/^                output wire beep,$/;"	p
+wire	top_ep4ce6.v	/^                output wire beep_o,$/;"	p
 wire	top_ep4ce6.v	/^                output wire uart_tx,$/;"	p
